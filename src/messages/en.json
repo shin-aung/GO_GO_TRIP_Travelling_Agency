@@ -28,6 +28,8 @@
     }
   },
   "Packages": {
+    "title": "Our Packages",
+    "subtitle": "Choose the package that fits your travel style. Each includes accommodation, activities, and full support.",
     "ChiangMai": {
       "title": "Trip to Chiang Mai (5 Days Plan)",
       "description": "Discover the cultural heart of Northern Thailand with temples, nature, and vibrant local life.",

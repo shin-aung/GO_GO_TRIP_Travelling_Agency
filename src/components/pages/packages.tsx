@@ -4,8 +4,11 @@ import { motion } from "framer-motion";
 import Image from "next/image";
 import { HeaderBackground } from "@/images";
 import PackageCard from "../PackagesComponents/packages-card";
+import { useTranslations } from "next-intl";
 
 export default function Packages() {
+  const packageT = useTranslations("Packages");
+
   return (
     <div className="relative py-24 px-6">
       {/* Background */}
@@ -27,11 +30,10 @@ export default function Packages() {
         className="text-center max-w-3xl mx-auto"
       >
         <h1 className="text-4xl md:text-6xl font-extrabold text-white drop-shadow-lg">
-          Our Packages
+          {packageT("title")}
         </h1>
         <p className="mt-4 text-lg md:text-xl text-gray-200">
-          Choose the package that fits your travel style. Each includes
-          accommodation, activities, and full support.
+          {packageT("subtitle")}
         </p>
       </motion.div>
 

@@ -17,17 +17,19 @@
   },
   "AboutUsPage": {
     "title": "About Us",
-    "subtitle": "What we do here is:",
+    "subtitle": "ဒီမှာကျွန်တော်တို့လုပ်ဆောင်တာကတော့။",
     "contentOne": {
-      "title": "Personalized Travel Experiences",
-      "description": "We craft every trip to match your unique style, interests, and budget – no cookie-cutter tours here."
+      "title": "ကိပွင့်ခရီးစဉ်များ",
+      "description": "ကိုယ့်ထူးခြားတဲ့စတိုင်၊ စိတ်ဝင်စားမှုတွေနဲ့ ဘတ်ဂျက်ကို ကိုက်ညီအောင် ခရီးစဉ်တိုင်းကို ဖန်တီးပေးပါတယ် - ပုံမှန်ခရီးစဉ်တွေ မဟုတ်ပါဘူး။"
     },
     "contentTwo": {
-      "title": "Our Vision",
-      "description": "We aim to inspire people to explore the world by making travel easier, more enjoyable, and more meaningful. Every trip is an opportunity to create lasting memories."
+      "title": "ကျွန်တော်တို့ရဲ့ ရည်မှန်းချက်",
+      "description": "ကျွန်တော်တို့ရဲ့ ရည်မှန်းချက်ကတော့ ခရီးသွားခြင်းကို ပိုမိုလွယ်ကူ၊ ပိုမိုပျော်စရာကောင်းပြီး အဓိပ္ပာယ်ရှိအောင် ပြုလုပ်ပေးခြင်းဖြင့် လူတွေကို ကမ္ဘာကြီးကို စူးစမ်းလေ့လာဖို့ အားပေးရန် ဖြစ်ပါတယ်။ ခရီးစဉ်တိုင်းဟာ အမြဲတမ်းမှတ်မိစရာများ ဖန်တီးနိုင်တဲ့ အခွင့်အရေးတစ်ခုပါ။"
     }
   },
   "Packages": {
+    "title": "Our Packages",
+    "subtitle": "သင့်ခရီးစဉ်စတိုင်နဲ့ ကိုက်ညီတဲ့ ပက်ကေ့ချ်ကို ရွေးချယ်လိုက်ပါ။ တစ်ခုချင်းစီမှာ နေရာထိုင်ခင်း၊ လှုပ်ရှားမှုများ၊ ပြည့်စုံသော အထောက်အပံ့များ ပါဝင်ပါတယ်။",
     "ChiangMai": {
       "title": "Trip to Chiang Mai (5 Days Plan)",
       "description": "Discover the cultural heart of Northern Thailand with temples, nature, and vibrant local life.",
@@ -89,7 +91,7 @@
   "Countries": {
     "CountriesPage": {
       "title": "Explore Countries",
-      "description": "Choose from our curated experiences designed to inspire adventure and relaxation.",
+      "description": "ရွေးချယ်စရာ အံ့သြဖွယ်ရာ ကမ်းလွန်များ၊ သမိုင်းဝင်အဆောက်အအုံများနှင့် ထူးခြားသော ယဉ်ကျေးမှုများကို ရှာဖွေတွေ့ရှိလိုက်ပါ။",
       "items": [
         {
           "title": "Thailand",
