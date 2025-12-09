@@ -5,12 +5,14 @@ import { useRouter, usePathname } from "next/navigation";
 import { GOGOTRIPNoBgLogo } from "@/images";
 import { Menu, X } from "lucide-react"; // hamburger & close icons
 import { motion, AnimatePresence } from "framer-motion"; // for animations
+import { useTranslations } from "next-intl";
 
 export default function Nav() {
   const [activeSection, setActiveSection] = useState("home");
   const [isMenuOpen, setIsMenuOpen] = useState(false);
   const router = useRouter();
   const pathname = usePathname();
+  const nav = useTranslations("Nav");
 
   // Extract language from path
   const currentLang = pathname.includes("/my") ? "my" : "en";
@@ -49,19 +51,19 @@ export default function Nav() {
 
   // Labels by language
   const navItems = [
-    { id: "home", label: currentLang === "en" ? "Home" : "ပင်မ" },
-    { id: "about", label: currentLang === "en" ? "About" : "အကြောင်း" },
+    { id: "home", label: nav("home") },
+    { id: "about", label: nav("aboutUs") },
     {
       id: "packages",
-      label: currentLang === "en" ? "Packages" : "ပက်ကေ့ဂျ်များ",
+      label: nav("packages"),
     },
     {
       id: "countries",
-      label: currentLang === "en" ? "Countries" : "ခရီးအစီအစဉ်",
+      label: nav("countries"),
     },
     {
       id: "contact",
-      label: currentLang === "en" ? "Contact Us" : "ဆက်သွယ်ရန်",
+      label: nav("contact"),
     },
   ];
 

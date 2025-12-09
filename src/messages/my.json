@@ -1,6 +1,172 @@
 {
+  "UniversalWords": {
+    "back": "Back"
+  },
+    "Nav": {
+    "home": "Home",
+    "aboutUs": "About Us",
+    "packages": "Packages",
+    "countries": "Countries",
+    "contact": "Contact Us"
+  },
   "HomePage": {
-    "title": "ဟလို",
-    "about": "မင်မင်"
+    "title": "Let’s Go Places – GO GO TRIP.",
+    "about": "Your journey begins here – unforgettable adventures, amazing memories, every step of the way. Pack Your Bags – Let’s Go, Go, Go!",
+    "explorePackages": "Explore Packages",
+    "contactUs": "Contact Us"
+  },
+  "AboutUsPage": {
+    "title": "About Us",
+    "subtitle": "What we do here is:",
+    "contentOne": {
+      "title": "Personalized Travel Experiences",
+      "description": "We craft every trip to match your unique style, interests, and budget – no cookie-cutter tours here."
+    },
+    "contentTwo": {
+      "title": "Our Vision",
+      "description": "We aim to inspire people to explore the world by making travel easier, more enjoyable, and more meaningful. Every trip is an opportunity to create lasting memories."
+    }
+  },
+  "Packages": {
+    "ChiangMai": {
+      "title": "Trip to Chiang Mai (5 Days Plan)",
+      "description": "Discover the cultural heart of Northern Thailand with temples, nature, and vibrant local life.",
+      "highlights": [
+        "Visit Doi Suthep Temple overlooking Chiang Mai",
+        "Explore the Old City and Night Bazaar",
+        "Day trip to Elephant Nature Park",
+        "Traditional Lanna cooking class",
+        "Relax at Doi Inthanon National Park"
+      ],
+      "duration": "5 Days / 4 Nights",
+      "includes": [
+        "Accommodation (4-star hotel)",
+        "Daily breakfast",
+        "Airport transfers",
+        "Guided tours with English-speaking guide"
+      ],
+      "price": "Starting from $650 per person"
+    },
+    "AngkorWat": {
+      "title": "Trip to Angkor Wat (5 Days Plan)",
+      "description": "Explore the ancient wonders of Cambodia and the world-famous Angkor Wat temple complex.",
+      "highlights": [
+        "Sunrise tour of Angkor Wat",
+        "Bayon Temple and Angkor Thom",
+        "Ta Prohm (Tomb Raider Temple)",
+        "Floating Village on Tonlé Sap Lake",
+        "Phare Cambodian Circus show"
+      ],
+      "duration": "5 Days / 4 Nights",
+      "includes": [
+        "Hotel accommodation in Siem Reap",
+        "Daily breakfast",
+        "Angkor Pass (3 days)",
+        "Private transfers and guide"
+      ],
+      "price": "Starting from $720 per person"
+    },
+    "3Countries": {
+      "title": "Trip to 3 Countries (7 Days Plan)",
+      "description": "A unique journey across Thailand, Cambodia, and Vietnam to experience the best of Southeast Asia.",
+      "highlights": [
+        "Chiang Mai temples and night markets",
+        "Angkor Wat & Siem Reap highlights",
+        "Mekong Delta boat tour in Vietnam",
+        "Local food experiences in each country",
+        "Cultural shows and traditional performances"
+      ],
+      "duration": "7 Days / 6 Nights",
+      "includes": [
+        "Hotels in Chiang Mai, Siem Reap, and Ho Chi Minh City",
+        "All transfers and flights between countries",
+        "Daily breakfast + selected meals",
+        "Guided tours in each destination"
+      ],
+      "price": "Starting from $1,480 per person"
+    }
+  },
+  "Countries": {
+    "CountriesPage": {
+      "title": "Explore Countries",
+      "description": "Choose from our curated experiences designed to inspire adventure and relaxation.",
+      "items": [
+        {
+          "title": "Thailand",
+          "desc": "Relax on golden sands and swim in crystal clear waters of Phuket and Krabi.",
+          "image": "HeaderBackground"
+        },
+        {
+          "title": "Singapore",
+          "desc": "Experience the modern skyline, vibrant culture, and famous Marina Bay Sands.",
+          "image": "HeaderBackground"
+        },
+        {
+          "title": "Vietnam",
+          "desc": "Explore stunning landscapes, historic sites, and delicious street food in Hanoi and Ho Chi Minh City.",
+          "image": "HeaderBackground"
+        },
+        {
+          "title": "Cambodia",
+          "desc": "Discover the majestic temples of Angkor Wat and the rich history of Phnom Penh.",
+          "image": "HeaderBackground"
+        },
+        {
+          "title": "Laos",
+          "desc": "Enjoy serene rivers, lush mountains, and traditional Lao culture in Luang Prabang.",
+          "image": "HeaderBackground"
+        }
+      ]
+    },
+    "Thailand": {
+      "Bangkok": {
+        "name": "Bangkok",
+        "description": "The bustling capital of Thailand, famous for its vibrant street life, grand palaces, and temples.",
+        "time": "3-4 days is ideal to explore major attractions.",
+        "destinations": [
+          "Grand Palace",
+          "Wat Pho",
+          "Chatuchak Market",
+          "Khao San Road",
+          "IconSiam"
+        ],
+        "items": [
+          "Light, breathable clothing for hot weather",
+          "Comfortable walking shoes",
+          "Travel adapter for electronics",
+          "Reusable water bottle",
+          "Sunscreen and hat"
+        ],
+        "otherTips": [
+          "Carry small change for tuk-tuks and street food.",
+          "Respect local customs and temple etiquette.",
+          "Use sunscreen and stay hydrated.",
+          "Consider taking river cruises to see the city from a different perspective."
+        ]
+      },
+      "Chiang Mai": {
+        "name": "Chiang Mai",
+        "description": "A cultural hub in Northern Thailand, surrounded by mountains and famous for temples and night markets.",
+        "time": "2-3 days to explore temples, markets, and nearby nature.",
+        "destinations": [
+          "Doi Suthep Temple",
+          "Old City Temples",
+          "Night Bazaar",
+          "Elephant Nature Park",
+          "Chiang Mai Zoo"
+        ],
+        "items": [
+          "Comfortable walking shoes",
+          "Light jacket for cooler evenings",
+          "Camera for temple photography",
+          "Reusable water bottle"
+        ],
+        "otherTips": [
+          "Rent a scooter to explore surrounding areas.",
+          "Try local northern Thai dishes like Khao Soi.",
+          "Plan visits to ethical elephant sanctuaries instead of riding parks."
+        ]
+      }
+    }
   }
 }

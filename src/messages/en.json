@@ -2,6 +2,13 @@
   "UniversalWords": {
     "back": "Back"
   },
+  "Nav": {
+    "home": "Home",
+    "aboutUs": "About Us",
+    "packages": "Packages",
+    "countries": "Countries",
+    "contact": "Contact Us"
+  },
   "HomePage": {
     "title": "Let’s Go Places – GO GO TRIP.",
     "about": "Your journey begins here – unforgettable adventures, amazing memories, every step of the way. Pack Your Bags – Let’s Go, Go, Go!",
