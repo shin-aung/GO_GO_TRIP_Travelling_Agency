@@ -23,7 +23,7 @@ export default function HomePage() {
         backgroundImage: `url(${HeaderBackground.src})`,
         backgroundSize: "cover",
         backgroundPosition: "center",
-        transform: "scaleY(-1)", // 👈 flips background upside down
+        transform: "scaleY(-1)",
       }}
     >
       {/* Overlay */}

@@ -14,6 +14,7 @@ const imageMap: Record<string, any> = {
 
 export default function Countries() {
   const t = useTranslations("Countries.CountriesPage");
+  const universalT = useTranslations("UniversalWords");
 
   const countries = t.raw("items") as Array<{
     title: string;
@@ -84,7 +85,7 @@ export default function Countries() {
                   href={`/Countries/${encodeURIComponent(country.title)}`}
                   className="mt-6 inline-block bg-white text-black font-semibold px-4 py-2 rounded-lg shadow opacity-0 group-hover:opacity-100 transition-all duration-500 hover:bg-black hover:text-white"
                 >
-                  See More
+                  {universalT("seeMore")}
                 </Link>
               </div>
             </div>
