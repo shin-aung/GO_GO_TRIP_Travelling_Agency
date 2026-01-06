@@ -27,12 +27,6 @@ export default function Countries() {
     fetchCountries();
   }, []);
 
-  const countries = t.raw("items") as Array<{
-    title: string;
-    desc: string;
-    image: string;
-  }>;
-
   return (
     <div className="relative py-24 px-6 overflow-hidden">
       {/* Background */}
