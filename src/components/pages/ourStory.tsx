@@ -28,7 +28,7 @@ export default function OurStory() {
         <p className="text-lg leading-relaxed mb-6">
           TRIP ZONE was founded by{" "}
           <span className="font-semibold">
-            Shin Thant Aung, Alinah, Harish, Kristine and Linn
+            Shin Thant Aung, Alinah and Harish
           </span>
           , a passionate traveler who believed that exploring the world should
           be more than just visiting places. It should be about creating
