@@ -1,6 +1,6 @@
 "use client";
 
-import { HeaderBackground } from "@/images";
+import { HeaderBackground, GOGOTRIPLogo } from "@/images";
 import { useTranslations } from "next-intl";
 import { FaFacebook, FaInstagram, FaTiktok } from "react-icons/fa";
 import { motion } from "framer-motion";
@@ -20,7 +20,8 @@ export default function HomePage() {
     <div
       className="relative pt-24 px-2 py-2 md:py-2 text-black"
       style={{
-        backgroundImage: `url(${HeaderBackground.src})`,
+        // backgroundImage: `url(${HeaderBackground.src})`,
+        backgroundImage: `url(${GOGOTRIPLogo.src})`,
         backgroundSize: "cover",
         backgroundPosition: "center",
         transform: "scaleY(-1)",
@@ -30,7 +31,8 @@ export default function HomePage() {
       <div className="absolute inset-0 bg-white/60 backdrop-blur-sm" />
       <div
         style={{
-          backgroundImage: `url(${HeaderBackground.src})`,
+          // backgroundImage: `url(${HeaderBackground.src})`,
+          backgroundImage: `url(${GOGOTRIPLogo.src})`,
           backgroundSize: "cover",
           backgroundPosition: "center",
         }}
