@@ -90,7 +90,7 @@ export default function Nav() {
         >
           <img src={GOGOTRIPNoBgLogo.src} alt="GO GO TRIP" className="h-10" />
           <span className="font-extrabold text-xl tracking-wide text-white">
-            GO GO TRIP
+            TRIP ZONE
           </span>
         </div>
 

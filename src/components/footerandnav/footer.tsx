@@ -52,7 +52,7 @@ export default function Footer() {
         <div>
           <h4 className="font-semibold text-white">Contact Us</h4>
           <p className="mt-2 text-sm">
-            Email: info@gogotrip.com <br />
+            Email: info@tripzone.com <br />
             Phone: +95 9 123 456 789
           </p>
         </div>
