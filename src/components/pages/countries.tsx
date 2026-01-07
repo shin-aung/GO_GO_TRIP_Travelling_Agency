@@ -1,6 +1,7 @@
 "use client";
 
 import { useEffect, useState } from "react";
+import { Country } from "@/dataTypes/country";
 import { motion } from "framer-motion";
 import Image from "next/image";
 import Link from "next/link";
@@ -66,10 +67,12 @@ export default function Countries() {
               className="group relative w-72 h-80 flex-shrink-0 rounded-2xl overflow-hidden shadow-lg"
             >
               {/* Image as full background */}
-              <img
-                src={`https://drive.google.com/thumbnail?id=${country.imageURL}`}
-                alt={country.name}
-                className="absolute inset-0 w-full h-full object-cover transition-transform duration-700 group-hover:scale-110"
+              <div
+                className="absolute inset-0 w-full h-full bg-cover bg-center transition-transform duration-700 group-hover:scale-110"
+                style={{
+                  backgroundImage: `url(https://drive.google.com/thumbnail?id=${country.imageURL})`,
+                }}
+                aria-label={country.name}
               />
 
               {/* Overlay */}

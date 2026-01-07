@@ -88,7 +88,13 @@ export default function Nav() {
           className="flex items-center space-x-2 cursor-pointer"
           onClick={() => scrollToSection("home")}
         >
-          <img src={GOGOTRIPNoBgLogo.src} alt="GO GO TRIP" className="h-10" />
+          <div
+            className="h-10 bg-contain bg-no-repeat bg-center"
+            style={{
+              backgroundImage: `url(${GOGOTRIPNoBgLogo.src})`,
+            }}
+            aria-label="GO GO TRIP"
+          />
           <span className="font-extrabold text-xl tracking-wide text-white">
             TRIP ZONE
           </span>

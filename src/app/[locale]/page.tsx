@@ -5,7 +5,6 @@ import AboutUsPage from "@/components/pages/about-us-page";
 import ContactUs from "@/components/pages/contact-us";
 import HomePage from "@/components/pages/home-page";
 import Packages from "@/components/pages/packages";
-import { useTranslations } from "next-intl";
 import { setRequestLocale } from "next-intl/server";
 import { use } from "react";
 import Countries from "@/components/pages/countries";

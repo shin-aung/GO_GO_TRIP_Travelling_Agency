@@ -6,6 +6,7 @@ import { useTranslations } from "next-intl";
 import { useRouter } from "next/navigation";
 import { use, useEffect, useState } from "react";
 import { ArrowLeft, Clock, DollarSign, Star } from "lucide-react";
+import { Package } from "@/dataTypes/packages";
 
 interface AboutPackageProps {
   params: Promise<{
@@ -58,10 +59,12 @@ export default function AboutPackage({ params }: AboutPackageProps) {
 
         {/* Hero Section */}
         <div className="relative w-full h-64 md:h-96">
-          <img
-            src={`https://drive.google.com/thumbnail?id=${packageById.imageURL}`}
-            alt="Header Background"
-            className="object-cover w-full h-full"
+          <div
+            className="w-full h-full bg-cover bg-center"
+            style={{
+              backgroundImage: `url(https://drive.google.com/thumbnail?id=${packageById.imageURL})`,
+            }}
+            aria-label="Header Background"
           />
           <div className="absolute inset-0 bg-black/40 flex items-center justify-center">
             <h1 className="text-4xl md:text-5xl font-extrabold text-white drop-shadow-lg">
@@ -90,17 +93,15 @@ export default function AboutPackage({ params }: AboutPackageProps) {
               <div className="absolute left-3 top-0 h-full w-px bg-green-300" />
 
               {packageById.details.map(
-                (
-                  {
-                    place,
-                    time,
-                    description,
-                  }: {
-                    place: string;
-                    time: string;
-                    description: string;
-                  },
-                ) => (
+                ({
+                  place,
+                  time,
+                  description,
+                }: {
+                  place: string;
+                  time: string;
+                  description: string;
+                }) => (
                   <li key={`${place}-${time}`} className="relative pl-10 pb-8">
                     {/* Bullet */}
                     <span className="absolute left-1.5 top-1 w-3 h-3 bg-green-600 rounded-full" />

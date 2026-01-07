@@ -2,6 +2,7 @@ import { useRouter } from "next/navigation";
 import { motion, AnimatePresence } from "framer-motion";
 import { useEffect, useState } from "react";
 import { useSwipeable } from "react-swipeable";
+import { Package } from "@/dataTypes/packages";
 
 export default function PackageCard() {
   const router = useRouter();
@@ -80,10 +81,12 @@ export default function PackageCard() {
             >
               {/* Image Section */}
               <div className="relative h-56 w-full overflow-hidden">
-                <img
-                  src={`https://drive.google.com/thumbnail?id=${pkg.imageURL}`}
-                  alt={pkg.title}
-                  className="absolute inset-0 w-full h-full object-cover transition-transform duration-700 group-hover:scale-110"
+                <div
+                  className="absolute inset-0 w-full h-full bg-cover bg-center transition-transform duration-700 group-hover:scale-110"
+                  style={{
+                    backgroundImage: `url(https://drive.google.com/thumbnail?id=${pkg.imageURL})`,
+                  }}
+                  aria-label={pkg.title}
                 />
                 <span className="absolute top-4 left-4 bg-orange-500 text-white px-4 py-1.5 rounded-xl shadow-md text-sm font-semibold">
                   {pkg.price}

@@ -1,6 +1,6 @@
-type Country = {
-    id: string;
+export interface Country {
+  id: string;
   name: string;
-  description: string;
-  imageURL: string;
-};
+  description?: string;
+  imageURL?: string;
+}

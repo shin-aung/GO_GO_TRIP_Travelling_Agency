@@ -5,6 +5,7 @@ import { motion } from "framer-motion";
 import { useRouter } from "next/navigation";
 import { ArrowLeft } from "lucide-react";
 import { useTranslations } from "next-intl";
+import { Package } from "@/dataTypes/packages";
 
 interface AboutCountryProps {
   params: Promise<{
@@ -69,10 +70,12 @@ export default function AboutCountry({ params }: AboutCountryProps) {
         >
           {/* Image Section */}
           <div className="relative h-56 w-full overflow-hidden">
-            <img
-              src={`https://drive.google.com/thumbnail?id=${pkg.imageURL}`}
-              alt={pkg.title}
-              className="absolute inset-0 w-full h-full object-cover transition-transform duration-700 group-hover:scale-110"
+            <div
+              className="absolute inset-0 w-full h-full bg-cover bg-center transition-transform duration-700 group-hover:scale-110"
+              style={{
+                backgroundImage: `url(https://drive.google.com/thumbnail?id=${pkg.imageURL})`,
+              }}
+              aria-label={pkg.title}
             />
             <span className="absolute top-4 left-4 bg-orange-500 text-white px-4 py-1.5 rounded-xl shadow-md text-sm font-semibold">
               {pkg.price}

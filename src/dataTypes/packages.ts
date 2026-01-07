@@ -1,5 +1,11 @@
-type Package = {
-    id: string;
+type PackageDetail = {
+  place: string;
+  time: string;
+  description: string;
+};
+
+export interface Package {
+  id: string;
   countryId: string;
   title: string;
   subtitle: string;
@@ -8,5 +14,5 @@ type Package = {
   price: number;
   imageURL: string;
   duration: string;
-  details: any[];
-};
+  details: PackageDetail[];
+}
