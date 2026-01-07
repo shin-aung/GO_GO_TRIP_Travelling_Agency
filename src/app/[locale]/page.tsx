@@ -18,7 +18,6 @@ export default function Home({
   const { locale } = use(params);
 
   setRequestLocale(locale);
-  const t = useTranslations("HomePage");
 
   return (
     <div className="scroll-smooth">

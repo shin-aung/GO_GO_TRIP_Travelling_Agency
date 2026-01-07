@@ -100,7 +100,6 @@ export default function AboutPackage({ params }: AboutPackageProps) {
                     time: string;
                     description: string;
                   },
-                  index
                 ) => (
                   <li key={`${place}-${time}`} className="relative pl-10 pb-8">
                     {/* Bullet */}

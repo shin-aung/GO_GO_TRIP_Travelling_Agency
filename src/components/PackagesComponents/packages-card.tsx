@@ -69,7 +69,7 @@ export default function PackageCard() {
 
       <div className="flex overflow-hidden gap-6">
         <AnimatePresence initial={false}>
-          {visiblePackages.map((pkg, index) => (
+          {visiblePackages.map((pkg) => (
             <motion.article
               key={pkg.id}
               initial={{ opacity: 0, x: 100 }}
