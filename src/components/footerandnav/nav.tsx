@@ -3,16 +3,23 @@
 import { useState, useEffect } from "react";
 import { useRouter, usePathname } from "next/navigation";
 import { GOGOTRIPNoBgLogo } from "@/images";
+import AuthModal from "./components/AuthModal";
 import { Menu, X } from "lucide-react"; // hamburger & close icons
 import { motion, AnimatePresence } from "framer-motion"; // for animations
 import { useTranslations } from "next-intl";
+import CryptoJS from "crypto-js";
+import { User } from "@/dataTypes/user";
 
 export default function Nav() {
+  const [authOpen, setAuthOpen] = useState(false);
   const [activeSection, setActiveSection] = useState("home");
   const [isMenuOpen, setIsMenuOpen] = useState(false);
   const router = useRouter();
   const pathname = usePathname();
   const nav = useTranslations("Nav");
+  const [success, setSuccess] = useState(false);
+  const [user, setUser] = useState<User | null>(null);
+  const [loading, setLoading] = useState(true); // start as loading
 
   // Extract language from path
   const currentLang = pathname.includes("/my") ? "my" : "en";
@@ -80,6 +87,42 @@ export default function Nav() {
     }
   };
 
+  useEffect(() => {
+    const fetchUser = async () => {
+      const encryptedUserID = localStorage.getItem("userId");
+      const secretKey = process.env.NEXT_PUBLIC_SECRET_KEY;
+
+      if (!encryptedUserID || !secretKey) {
+        setLoading(false); // stop loading if no userId
+        return;
+      }
+
+      try {
+        // Decrypt the userId before sending to your API
+        const bytes = CryptoJS.AES.decrypt(encryptedUserID, secretKey);
+        const userId = bytes.toString(CryptoJS.enc.Utf8);
+
+        const queryParams = new URLSearchParams({ id: userId }).toString();
+        const res = await fetch(`/api/signin?${queryParams}`);
+        const data = await res.json();
+
+        if (data) {
+          setUser(data);
+          setSuccess(true);
+        } else {
+          setSuccess(false);
+        }
+      } catch (err) {
+        console.error(err);
+        setSuccess(false);
+      } finally {
+        setLoading(false); // stop loading in all cases
+      }
+    };
+
+    fetchUser();
+  }, []);
+
   return (
     <header className="fixed top-0 left-0 w-full z-50 mt-4">
       <div className="max-w-7xl mx-auto flex items-center justify-between px-6 py-3">
@@ -118,7 +161,25 @@ export default function Nav() {
         </nav>
 
         {/* Language Switcher (Desktop only) */}
-        <div className="hidden lg:flex items-center space-x-2">
+        {loading ? (
+          // Loading indicator for just this part
+          <div className="w-10 h-10 rounded-full bg-gray-300 animate-pulse"></div>
+        ) : success && user ? (
+          // User avatar
+          <div className="w-10 h-10 rounded-full bg-orange-500 text-white flex items-center justify-center font-bold">
+            {user.name.charAt(0).toUpperCase()}
+          </div>
+        ) : (
+          // Sign In / Register button
+          <button
+            onClick={() => setAuthOpen(true)}
+            className="px-4 py-2 rounded-full bg-white text-black font-semibold hover:bg-orange-200 transition"
+          >
+            Sign In / Register
+          </button>
+        )}
+
+        {/* <div className="hidden lg:flex items-center space-x-2">
           <button
             onClick={() => switchLanguage("en")}
             className={`cursor-pointer px-3 py-1 rounded-full text-sm font-semibold transition ${
@@ -139,7 +200,7 @@ export default function Nav() {
           >
             MY
           </button>
-        </div>
+        </div> */}
 
         {/* Hamburger Icon (mobile + iPad) */}
         <button
@@ -148,6 +209,7 @@ export default function Nav() {
         >
           {isMenuOpen ? <X size={28} /> : <Menu size={28} />}
         </button>
+        <AuthModal open={authOpen} onClose={() => setAuthOpen(false)} />
       </div>
 
       {/* Mobile/iPad Fullscreen Menu */}

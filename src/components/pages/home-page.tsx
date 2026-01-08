@@ -1,6 +1,6 @@
 "use client";
 
-import { HeaderBackground, GOGOTRIPLogo } from "@/images";
+import { GOGOTRIPLogo } from "@/images";
 import { useTranslations } from "next-intl";
 import { FaFacebook, FaInstagram, FaTiktok } from "react-icons/fa";
 import { motion } from "framer-motion";

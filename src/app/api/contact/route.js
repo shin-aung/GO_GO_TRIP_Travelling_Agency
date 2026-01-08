@@ -11,7 +11,7 @@ export async function POST(req) {
       range: "Contact!A:E",
       valueInputOption: "USER_ENTERED",
       requestBody: {
-        values: [[uniqueId,name, email, message, new Date().toISOString()]],
+        values: [[uniqueId, name, email, message, new Date().toISOString()]],
       },
     });
 
