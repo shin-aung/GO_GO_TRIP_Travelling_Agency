@@ -7,6 +7,7 @@ import { useRouter } from "next/navigation";
 import { use, useEffect, useState } from "react";
 import { ArrowLeft, Clock, DollarSign, Star } from "lucide-react";
 import { Package } from "@/dataTypes/packages";
+import ReviewsSection from "@/components/pages/review";
 
 interface AboutPackageProps {
   params: Promise<{
@@ -133,6 +134,7 @@ export default function AboutPackage({ params }: AboutPackageProps) {
           </section>
         </div>
       </div>
+      <ReviewsSection packageId={id} />
     </main>
   );
 }

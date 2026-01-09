@@ -102,15 +102,17 @@ export default function Nav() {
         const bytes = CryptoJS.AES.decrypt(encryptedUserID, secretKey);
         const userId = bytes.toString(CryptoJS.enc.Utf8);
 
-        const queryParams = new URLSearchParams({ id: userId }).toString();
-        const res = await fetch(`/api/signin?${queryParams}`);
-        const data = await res.json();
+        if (userId) {
+          const queryParams = new URLSearchParams({ id: userId }).toString();
+          const res = await fetch(`/api/signin?${queryParams}`);
+          const data = await res.json();
 
-        if (data) {
-          setUser(data);
-          setSuccess(true);
-        } else {
-          setSuccess(false);
+          if (data) {
+            setUser(data);
+            setSuccess(true);
+          } else {
+            setSuccess(false);
+          }
         }
       } catch (err) {
         console.error(err);

@@ -10,6 +10,7 @@ import { setRequestLocale } from "next-intl/server";
 import { use } from "react";
 import Countries from "@/components/pages/countries";
 import OurStory from "@/components/pages/ourStory";
+import ReviewsSection from "@/components/pages/review";
 
 export default function Home({
   params,
@@ -36,6 +37,7 @@ export default function Home({
       </section>
       <section id="countries">
         <Countries />
+        <ReviewsSection />
       </section>
       <section id="contact">
         <ContactUs />
