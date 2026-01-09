@@ -25,7 +25,7 @@ export default function ReviewForm({ onSuccess, packageId }: ReviewFormProps) {
     const secretKey = process.env.NEXT_PUBLIC_SECRET_KEY;
 
     if (!encryptedUserID || !secretKey) {
-      setLoading(false); // stop loading if no userId
+      setError("Please sign in to write a review.");
       return;
     }
 
