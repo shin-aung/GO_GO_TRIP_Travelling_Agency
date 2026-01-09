@@ -1,5 +1,5 @@
 // Background Images
-export {default as HeaderBackground} from "./background/headerBackground.jpeg"
+export {default as HeaderBackground} from "./background/headerBackground.png"
 
 // Logos
 export {default as GOGOTRIPLogo} from "./Logo/GoGoTripLogo.jpeg"

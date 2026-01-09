@@ -32,7 +32,7 @@ export async function POST(req) {
       range: "User!A:E",
       valueInputOption: "USER_ENTERED",
       requestBody: {
-        values: [[uniqueId, name, email, password, timestamp]],
+        values: [[uniqueId, name, email, `'${password}`, timestamp]],
       },
     });
 
