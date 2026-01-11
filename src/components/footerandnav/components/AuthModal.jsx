@@ -3,7 +3,7 @@
 import { useState } from "react";
 import CryptoJS from "crypto-js";
 
-export default function AuthModal({ open, onClose }) {
+export default function AuthModal({ open, onClose, route }) {
   const [activeTab, setActiveTab] = useState("signin");
 
   if (!open) return null;
@@ -44,7 +44,11 @@ export default function AuthModal({ open, onClose }) {
         </div>
 
         {/* Content */}
-        {activeTab === "signin" ? <SignInForm /> : <RegisterForm />}
+        {activeTab === "signin" ? (
+          <SignInForm route={route} />
+        ) : (
+          <RegisterForm />
+        )}
       </div>
     </div>
   );
@@ -184,7 +188,7 @@ function RegisterForm() {
   );
 }
 
-function SignInForm() {
+function SignInForm({ route }) {
   const [form, setForm] = useState({ email: "", password: "" });
   const [loading, setLoading] = useState(false);
   const [error, setError] = useState(""); // show invalid login
@@ -222,8 +226,9 @@ function SignInForm() {
         setError("");
 
         // Redirect using native browser
+        if (!route || route === "") route = "/en";
         setTimeout(() => {
-          window.location.href = "/en";
+          window.location.href = route;
         }, 1000);
       } else {
         setError("Invalid email or password");

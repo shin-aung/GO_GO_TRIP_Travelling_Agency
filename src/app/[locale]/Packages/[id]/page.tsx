@@ -5,7 +5,7 @@
 import { useTranslations } from "next-intl";
 import { useRouter } from "next/navigation";
 import { use, useEffect, useState } from "react";
-import { ArrowLeft, Clock, DollarSign, Star } from "lucide-react";
+import { ArrowLeft, ArrowRight, Clock, DollarSign, Star } from "lucide-react";
 import { Package } from "@/dataTypes/packages";
 import ReviewsSection from "@/components/pages/review";
 
@@ -125,13 +125,28 @@ export default function AboutPackage({ params }: AboutPackageProps) {
           <section className="flex flex-col md:flex-row justify-between items-start md:items-center gap-6 border-t pt-6">
             <div className="flex items-center gap-3 text-gray-800 text-lg">
               <Clock className="w-6 h-6 text-blue-600" />
-              {packageById.duration}
+              {packageById.duration} days
             </div>
             <div className="flex items-center gap-3 text-gray-900 text-xl font-semibold">
               <DollarSign className="w-6 h-6 text-emerald-600" />
               {packageById.price}
             </div>
           </section>
+
+          <button
+            onClick={() => router.push(`/Packages/${id}/payment`)}
+            className="
+    flex items-center gap-2 px-4 py-2
+    bg-white/90 text-gray-700 font-medium
+    rounded-lg shadow-md
+    transition-all duration-200
+    hover:bg-black/90 hover:text-white
+    hover:-translate-y-0.5 hover:shadow-lg
+  "
+          >
+            Book Now
+            <ArrowRight className="w-5 h-5" />
+          </button>
         </div>
       </div>
       <ReviewsSection packageId={id} />

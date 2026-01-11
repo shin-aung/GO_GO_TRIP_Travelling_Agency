@@ -211,7 +211,7 @@ export default function Nav() {
         >
           {isMenuOpen ? <X size={28} /> : <Menu size={28} />}
         </button>
-        <AuthModal open={authOpen} onClose={() => setAuthOpen(false)} />
+        <AuthModal open={authOpen} onClose={() => setAuthOpen(false)} route="/en" />
       </div>
 
       {/* Mobile/iPad Fullscreen Menu */}

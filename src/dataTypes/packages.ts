@@ -13,6 +13,6 @@ export interface Package {
   description: string;
   price: number;
   imageURL: string;
-  duration: string;
+  duration: number;
   details: PackageDetail[];
 }
