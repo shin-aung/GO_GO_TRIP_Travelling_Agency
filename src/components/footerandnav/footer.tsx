@@ -11,7 +11,7 @@ export default function Footer() {
     <footer className="bg-gray-900 text-gray-300">
       <div className="max-w-7xl mx-auto px-6 py-10 grid md:grid-cols-3 gap-8">
         <div>
-          <h3 className="font-bold text-white">GO GO TRIP</h3>
+          <h3 className="font-bold text-white">TRIPZONE</h3>
           <p className="mt-2 text-sm">
             Explore the world with our trusted travel services.
           </p>
@@ -58,7 +58,7 @@ export default function Footer() {
         </div>
       </div>
       <div className="text-center py-4 border-t border-gray-700 text-xs">
-        © {new Date().getFullYear()} GO GO TRIP. All rights reserved.
+        © {new Date().getFullYear()} TRIPZONE. All rights reserved.
       </div>
     </footer>
   );

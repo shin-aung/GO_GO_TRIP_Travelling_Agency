@@ -21,8 +21,8 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata: Metadata = {
-  title: "GO GO TRIP - A Travel Agency",
-  description: "Explore the world with GO GO TRIP, your trusted travel agency.",
+  title: "TRIPZONE - A Travel Agency",
+  description: "Explore the world with TRIPZONE, your trusted travel agency.",
 };
 
 export default async function LocaleLayout({

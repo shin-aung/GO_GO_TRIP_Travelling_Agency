@@ -138,7 +138,7 @@ export default function Nav() {
             style={{
               backgroundImage: `url(${GOGOTRIPNoBgLogo.src})`,
             }}
-            aria-label="GO GO TRIP"
+            aria-label="TRIPZONE"
           />
           <span className="font-extrabold text-xl tracking-wide text-white">
             TRIP ZONE
