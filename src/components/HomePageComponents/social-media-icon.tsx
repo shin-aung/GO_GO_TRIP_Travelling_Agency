@@ -11,8 +11,9 @@ const socialColors: SocialColors = {
   Telegram: "bg-sky-400",
   Viber: "bg-purple-500",
   Instagram: "bg-pink-500",
+  Youtube: "bg-red-600",
   Facebook: "bg-blue-700",
-  Tiktok: "bg-black",
+  TikTok: "bg-black",
 };
 
 export default function SocialButton({

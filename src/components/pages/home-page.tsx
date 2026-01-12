@@ -2,7 +2,7 @@
 
 import { GOGOTRIPLogo } from "@/images";
 import { useTranslations } from "next-intl";
-import { FaFacebook, FaInstagram, FaTiktok } from "react-icons/fa";
+import { FaFacebook, FaInstagram, FaTiktok, FaYoutube } from "react-icons/fa";
 import { motion } from "framer-motion";
 import SocialButton from "../HomePageComponents/social-media-icon";
 
@@ -87,19 +87,19 @@ export default function HomePage() {
               className="flex space-x-6 mt-8 md:mt-0 self-end"
             >
               <SocialButton
-                href="https://www.tiktok.com"
+                href="https://www.tiktok.com/@kriztin1128/video/7593315622591761671?is_from_webapp=1&sender_device=pc"
                 Icon={FaTiktok}
                 label="TikTok"
                 delay={0}
               />
               <SocialButton
-                href="https://www.instagram.com"
-                Icon={FaInstagram}
-                label="Instagram"
+                href="https://youtube.com/shorts/bIt5Ar4-V7g?si=sMCNOcX3_r5eI-SY"
+                Icon={FaYoutube}
+                label="Youtube"
                 delay={0.3}
               />
               <SocialButton
-                href="https://www.facebook.com"
+                href="https://www.facebook.com/share/17xJ4WWjA5/?mibextid=wwXIfr"
                 Icon={FaFacebook}
                 label="Facebook"
                 delay={0.6}
