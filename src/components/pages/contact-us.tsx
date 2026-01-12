@@ -123,7 +123,7 @@ export default function ContactUs() {
           className="bg-white rounded-2xl shadow-lg p-8 space-y-6"
         >
           <div>
-            <label className="block text-sm font-medium text-gray-700">
+            <label className="block text-md font-medium text-gray-700">
               {t("form.name")}
             </label>
             <input
@@ -131,12 +131,12 @@ export default function ContactUs() {
               value={form.name}
               onChange={handleChange}
               placeholder={t("form.name")}
-              className="mt-1 w-full rounded-lg border-gray-300 focus:border-orange-500 focus:ring-orange-500"
+              className="text-black text-sm mt-1 w-full rounded-lg border-gray-300 focus:border-orange-500 focus:ring-orange-500"
             />
           </div>
 
           <div>
-            <label className="block text-sm font-medium text-gray-700">
+            <label className="block text-md font-medium text-gray-700">
               {t("form.email")}
             </label>
             <input
@@ -145,12 +145,12 @@ export default function ContactUs() {
               value={form.email}
               onChange={handleChange}
               placeholder={t("form.email")}
-              className="mt-1 w-full rounded-lg border-gray-300 focus:border-orange-500 focus:ring-orange-500"
+              className="text-black text-sm mt-1 w-full rounded-lg border-gray-300 focus:border-orange-500 focus:ring-orange-500"
             />
           </div>
 
           <div>
-            <label className="block text-sm font-medium text-gray-700">
+            <label className="block text-md font-medium text-gray-700">
               {t("form.message")}
             </label>
             <textarea
@@ -159,7 +159,7 @@ export default function ContactUs() {
               onChange={handleChange}
               placeholder={t("form.message")}
               rows={4}
-              className="mt-1 w-full rounded-lg border-gray-300 focus:border-orange-500 focus:ring-orange-500"
+              className="text-black mt-1 w-full rounded-lg border-gray-300 focus:border-orange-500 focus:ring-orange-500 text-sm"
             ></textarea>
           </div>
 
