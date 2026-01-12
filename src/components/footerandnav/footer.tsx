@@ -28,19 +28,19 @@ export default function Footer() {
             onClick={() => scrollToSection("about")}
             className="cursor-pointer hover:text-orange-400"
           >
-            About
-          </div>
-          <div
-            onClick={() => scrollToSection("trip-plan")}
-            className="cursor-pointer hover:text-orange-400"
-          >
-            Trip Plan
+            About Us
           </div>
           <div
             onClick={() => scrollToSection("packages")}
             className="cursor-pointer hover:text-orange-400"
           >
             Packages
+          </div>
+          <div
+            onClick={() => scrollToSection("countries")}
+            className="cursor-pointer hover:text-orange-400"
+          >
+            Countries
           </div>
           <div
             onClick={() => scrollToSection("contact")}
@@ -53,7 +53,7 @@ export default function Footer() {
           <h4 className="font-semibold text-white">Contact Us</h4>
           <p className="mt-2 text-sm">
             Email: info@tripzone.com <br />
-            Phone: +95 9 123 456 789
+            Phone:  +65 1234 5678
           </p>
         </div>
       </div>
