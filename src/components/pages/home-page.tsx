@@ -2,7 +2,7 @@
 
 import { GOGOTRIPLogo } from "@/images";
 import { useTranslations } from "next-intl";
-import { FaFacebook, FaInstagram, FaTiktok, FaYoutube } from "react-icons/fa";
+import { FaFacebook, FaTiktok, FaYoutube } from "react-icons/fa";
 import { motion } from "framer-motion";
 import SocialButton from "../HomePageComponents/social-media-icon";
 
