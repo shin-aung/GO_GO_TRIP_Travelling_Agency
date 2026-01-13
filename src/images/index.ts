@@ -12,3 +12,6 @@ export {default as KristineImage} from "./Founder & Manager/Kristine.jpeg"
 export {default as AlinahImage} from "./Founder & Manager/Alinah.jpeg"
 export {default as HarishImage} from "./Founder & Manager/Harish.jpeg"
 
+// About Us Images
+export {default as OurVision} from "./AboutUs/Our_vision.jpg"
+export {default as Travelling} from "./AboutUs/travelling.jpg"

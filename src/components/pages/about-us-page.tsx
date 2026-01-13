@@ -3,7 +3,7 @@
 import { useTranslations } from "next-intl";
 import React from "react";
 import Image from "next/image";
-import { HeaderBackground } from "@/images";
+import { HeaderBackground, OurVision, Travelling } from "@/images";
 
 export default function AboutUsPage() {
   const AboutUsData = useTranslations("AboutUsPage");
@@ -37,8 +37,8 @@ export default function AboutUsPage() {
         <div className="grid grid-cols-1 md:grid-cols-2 gap-8 mb-12">
           <div className="w-full aspect-[16/9] relative rounded-lg overflow-hidden">
             <Image
-              src={HeaderBackground}
-              alt="Header Background"
+              src={Travelling}
+              alt="Travelling"
               fill
               className="object-cover"
               priority
@@ -62,8 +62,8 @@ export default function AboutUsPage() {
           </div>
           <div className="w-full aspect-[16/9] relative rounded-lg overflow-hidden order-1 md:order-2">
             <Image
-              src={HeaderBackground}
-              alt="Header Background"
+              src={OurVision}
+              alt="Our Vision"
               fill
               className="object-cover"
               priority
